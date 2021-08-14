@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import MemePage from './MemePage';
+import Header from './Header'
+import './MemePageStyle.css'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <MemePage />
   </React.StrictMode>,
   document.getElementById('root')
 );
