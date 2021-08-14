@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MemePage from './MemePage';
-import Header from './Header'
+import MemePage from './src/MemePage';
+import Header from './src/Header'
 import './MemePageStyle.css'
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './src/reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
