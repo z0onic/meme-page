@@ -40,8 +40,8 @@ function MemeWordControl(props) {
                 onChange={props.handleChange}
             />
             {/* <label htmlFor="font-size">Font</label> */}
-            <input type="number" class="font-size" min="25" max="100" value={props.fsize.replace("px", "")} onChange={handleFontChange}/>
             <div className="controls">
+                <input type="number" class="font-size" min="25" max="100" value={props.fsize.replace("px", "")} onChange={handleFontChange}/>
                 <div 
                     className="color-button"
                     name={props.name}

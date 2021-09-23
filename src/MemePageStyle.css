@@ -35,16 +35,19 @@ button:active{
 }
 
 #meme-builder {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-start;
+	display: grid;
+	grid-template-columns: 3fr 3fr .2fr;
+	grid-template-rows: 5fr 1fr;
+	grid-template-areas: 
+		"img ctrl nums"
+		"btn ctrl .";
 	margin: 100px 0;
 	width: 70vw;
 	height: auto;
 }
 
 .meme {
+	grid-area: img;
 	position: relative;
 }
 
@@ -68,19 +71,20 @@ button:active{
 }
 
 .meme > .img {
-	/* width: 100%; */
-	min-width: 600px;
-	max-width: 700px;
+	width: 35vw;
+	min-width: 300px;
 }
 
 .image-buttons {
+	grid-area: btn;
 	display: flex;
 	justify-content: space-around;
 	margin: 10px 0 0 0; 
 }
 
 .image-buttons > button {
-	width: 80px;
+	width: 10vw;
+	min-width: 80px;
 	height: 40px;
 	font-size: 18px;
 	background-color: white;
@@ -91,45 +95,64 @@ button:active{
 }
 
 .meme-form {
+	grid-area: ctrl;
 	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-	margin: 0 0 0 2vw;
-	width: 700px;
+	flex-direction: column;
+	margin: 0 1vw;
+	/* justify-content: center;
+	align-items: flex-start; */
+	/* margin: 0 0 0 2vw; */
+	/* width: 35vw; */
 }
 
+/* .control-container {
+	width: 100%;
+} */
+
 .meme-word-control {
-	height: 40px;
+	/* height: 40px; */
+	/* width: 30vw; */
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	/* align-content: space-between; */
 	margin: 0 0 30px 0;
-	width: 500px;
 }
 
 .meme-input {
-	width: 80%;
+	width: 60%;
+	height: 38px;
+	/* max-width: 700px; */
 	font-size: 20px;
 	text-align: center;
 	flex-shrink: 0;
 	border: none;
 	border-radius: 10px;
+	/* margin: 0 0 10px 0; */
 	/* box-shadow: inset -2px -2px 4px grey; */
 }
 
 .font-size {
 	width: 40px;
+	height: 38px;
 	border: none;
 	border-radius: 10px;
 	/* box-shadow: inset -2px -2px 4px grey; */
-	margin: 0 0 0 10px;
+	margin: 0 0 0 1px;
 	font-size: 18px;
 	text-align: center;
+	margin: 0 5px 0 0;
 }
 
 .controls {
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	height: 40px;
+	/* width: 35%; */
 }
 
 .color-button {
@@ -138,7 +161,7 @@ button:active{
 	outline: 3px inset black;
 	width: 1.2em;
 	height: 1.2em;
-	margin: 0 10px;
+	margin: 0 5px;
 }
 
 .color-picker-container {
@@ -153,6 +176,10 @@ button:active{
 	align-items: center;
 	background-color: rgba(88, 75, 90, 0.5);
 	border-radius: 10px;
+}
+
+.transformer {
+	margin: 0 0 0 5px;
 }
 
 .stroke-switch {
@@ -182,6 +209,14 @@ button:active{
 	display: flex;
 	flex-direction: column;
 	margin: 10px 0 0 20px;
+}
+
+.up-down-container {
+	grid-area: nums;
+	width: 3vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .up-down-container > button {

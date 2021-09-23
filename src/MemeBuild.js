@@ -99,27 +99,23 @@ function MemeBuild(props) {
 
     return (
         <div id="meme-builder">
-            <div className="meme-container">
-                <div className="meme">
-                    <img className="img" src={props.currentImg} alt="" />
-                    <div className="words">
-                        {wordGroup}
-                    </div>
-                </div>
-                <div className="image-buttons">
-                    <button onClick={props.handleSubmit}>Random</button>
-                    <button onClick={handleSave}>Save</button>
+            <div className="meme">
+                <img className="img" src={props.currentImg} alt="" />
+                <div className="words">
+                    {wordGroup}
                 </div>
             </div>
+            <div className="image-buttons">
+                <button onClick={props.handleSubmit}>Random</button>
+                <button onClick={handleSave}>Save</button>
+            </div>
             <form className="meme-form">
-                <div className="control-container">
-                    {controlGroup}
-                </div>
-                <div className="up-down-container">
-                    <button onClick={handleIncrease}>+</button>
-                    <button onClick={handleDecrease}>-</button>
-                </div>
+                {controlGroup}
             </form>
+            <div className="up-down-container">
+                <button onClick={handleIncrease}>+</button>
+                <button onClick={handleDecrease}>-</button>
+            </div>
         </div>
     )
 }
