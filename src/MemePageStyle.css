@@ -36,13 +36,13 @@ button:active{
 
 #meme-builder {
 	display: grid;
-	grid-template-columns: 3fr 3fr .2fr;
+	grid-template-columns: 2fr 2fr auto;
 	grid-template-rows: 5fr 1fr;
 	grid-template-areas: 
 		"img ctrl nums"
 		"btn ctrl .";
 	margin: 100px 0;
-	width: 80vw;
+	width: 70vw;
 	height: auto;
 }
 
@@ -68,10 +68,11 @@ button:active{
 
 .words > h2 {
 	width: auto;
+	margin: 0;
 }
 
 .meme > .img {
-	width: 35vw;
+	width: 100%;
 	min-width: 300px;
 }
 
@@ -98,7 +99,6 @@ button:active{
 	grid-area: ctrl;
 	display: flex;
 	flex-direction: column;
-	margin: 0 1vw;
 	/* justify-content: center;
 	align-items: flex-start; */
 	/* margin: 0 0 0 2vw; */
@@ -124,6 +124,7 @@ button:active{
 
 .meme-input {
 	width: 60%;
+	min-width: 150px;
 	height: 38px;
 	/* max-width: 700px; */
 	font-size: 20px;
@@ -213,7 +214,7 @@ button:active{
 
 .up-down-container {
 	grid-area: nums;
-	width: 3vw;
+	width: 4vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
