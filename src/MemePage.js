@@ -53,5 +53,4 @@ function MemePage() {
   )
 }
 
-
 export default MemePage;

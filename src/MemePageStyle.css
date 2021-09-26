@@ -73,7 +73,7 @@ button:active{
 
 .meme > .img {
 	width: 100%;
-	min-width: 300px;
+	min-width: 350px;
 }
 
 .image-buttons {
@@ -250,4 +250,64 @@ button:active{
 	width: 100%;
 	height: auto;
 	margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 800px) {
+	#meme-builder {
+		grid-template-columns: auto auto;
+		grid-template-rows: 40px auto auto;
+		grid-template-areas: 
+			"btn btn"
+			"img img"
+			"ctrl nums";
+		margin: 60px 0 0 0;
+	}
+	.image-buttons {
+		margin: 10px 0; 
+	}
+	.image-buttons > button {
+		width: 10vw;
+		height: 20px;
+		font-size: 13px;
+	}
+	.meme {
+		order: 1;
+	}
+	.meme-form {
+		order: 2;
+		margin: 15px 0;
+	}
+	.up-down-container {
+		order: 2;
+		margin: 15px 0 0 50px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.header-group {
+		height: 30px;
+		font-size: 10px;
+		text-align: left;
+	}
+	.header-group > .header-title {
+		margin: 5px 0 0 10px;
+	}
+	#meme-builder {
+		margin: 25px 0;
+		width: auto;
+	}
+	.meme-form {
+		width: auto;
+	}
+	.meme-word-control {
+		justify-content: flex-start;
+		/* flex-wrap: nowrap; */
+	}
+	.meme-input {
+		width: auto;
+	}
+	.up-down-container {
+		width: auto;
+	}
 }

@@ -12,7 +12,7 @@ function MemeBuild(props) {
             value: 'text',
             fill: '#FFFFFF',
             stroke: '#000000',
-            fsize: "40px",
+            fsize: "35px",
             activeMove: false,
             checkedStroke: true
         }
@@ -28,7 +28,7 @@ function MemeBuild(props) {
             value: 'text',
             fill: '#FFFFFF',
             stroke: '#000000',
-            fsize: "40px",
+            fsize: "35px",
             activeMove: 'false',
             checkedStroke: true
         }
