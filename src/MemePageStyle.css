@@ -198,11 +198,11 @@ button:active{
 
 .arrow-cross {
 	width: 35px;
-	filter: invert(58%) sepia(15%) saturate(1092%) hue-rotate(62deg) brightness(92%) contrast(84%);
-	stroke: black;
-	stroke-width: 1px;
-	stroke-dasharray: 2, 2;
-	stroke-linejoin: round;
+	/* filter: invert(58%) sepia(15%) saturate(1092%) hue-rotate(62deg) brightness(92%) contrast(84%); */
+	/* stroke: black; */
+	/* stroke-width: 1px; */
+	/* stroke-dasharray: 2, 2; */
+	/* stroke-linejoin: round; */
 	margin: 3px 0 0 0;
 }
 
@@ -281,6 +281,11 @@ button:active{
 	.up-down-container {
 		order: 2;
 		margin: 15px 0 0 50px;
+	}
+	.meme-group {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
 	}
 }
 
