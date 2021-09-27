@@ -5,11 +5,9 @@ import MemeGroup from './MemeGroup'
 //things to think about adding:
 //  make sure page is looking sleek
 //  make sure page is responsive to different screens
-//  be able to change the font size
 //  be able to change font style
 //  be able to use lower case 
 //  button for copy meme to clip board
-//  button to save meme as jpeg
 //  user draw on meme
 //  user upload their own image
 //  layer images

@@ -5,7 +5,7 @@ import React from 'react'
 function Images(props) {
     return (
         <img 
-            className={props.size} 
+            className={props.size}
             src={props.url} 
             alt={props.name}
             onClick={props.handleClick}
