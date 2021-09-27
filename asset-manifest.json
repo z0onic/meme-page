@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/meme-page/static/css/main.eb1825ec.chunk.css",
+    "main.css": "/meme-page/static/css/main.012e40ce.chunk.css",
     "main.js": "/meme-page/static/js/main.50332dfb.chunk.js",
     "main.js.map": "/meme-page/static/js/main.50332dfb.chunk.js.map",
     "runtime-main.js": "/meme-page/static/js/runtime-main.7e0b7cef.js",
@@ -12,7 +12,7 @@
     "static/js/3.abf74ed8.chunk.js.map": "/meme-page/static/js/3.abf74ed8.chunk.js.map",
     "index.html": "/meme-page/index.html",
     "static/css/2.bc511e20.chunk.css.map": "/meme-page/static/css/2.bc511e20.chunk.css.map",
-    "static/css/main.eb1825ec.chunk.css.map": "/meme-page/static/css/main.eb1825ec.chunk.css.map",
+    "static/css/main.012e40ce.chunk.css.map": "/meme-page/static/css/main.012e40ce.chunk.css.map",
     "static/js/2.0b197680.chunk.js.LICENSE.txt": "/meme-page/static/js/2.0b197680.chunk.js.LICENSE.txt",
     "static/media/arrow-cross.23913acb.svg": "/meme-page/static/media/arrow-cross.23913acb.svg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.7e0b7cef.js",
     "static/css/2.bc511e20.chunk.css",
     "static/js/2.0b197680.chunk.js",
-    "static/css/main.eb1825ec.chunk.css",
+    "static/css/main.012e40ce.chunk.css",
     "static/js/main.50332dfb.chunk.js"
   ]
 }
